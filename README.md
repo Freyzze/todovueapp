@@ -1,15 +1,15 @@
 # todovueapp
 # runs on django backend:
-  python manage.py make migration
-  python manage.py createsuperuser
-  python manage.py runserver
+  # python manage.py make migration
+  # python manage.py createsuperuser
+  # python manage.py runserver
 
 
 # Then
 # for vue go to:
-  appley_vue folder/
-  npm install
-  npm runserver
+  # appley_vue folder/
+  # npm install
+  # npm runserver
   
   
 #finally:
