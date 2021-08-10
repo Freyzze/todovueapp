@@ -31,7 +31,7 @@ ROOT_URLCONF = 'main.urls'
 LOGIN_REDIRECT_URL = "home"   
 LOGOUT_REDIRECT_URL = "home"  
 TEMPLATE_DIR = os.path.join(CORE_DIR, "templates")
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -94,13 +94,8 @@ WSGI_APPLICATION = 'Appley.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'appley_db',
-        'USER': 'postgres',
-        'PASSWORD': 'bell12',
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'default': {'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
